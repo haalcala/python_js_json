@@ -9,6 +9,7 @@ Wrapper class so that you can access `dict` and `list` as easily as in Javascrip
 
     ```python
     import real_json
+    import json
 
     data = {
         "a": 1,
@@ -72,6 +73,8 @@ Wrapper class so that you can access `dict` and `list` as easily as in Javascrip
     assert bool(wrapped.c) == True
     assert bool(wrapped.f)
 
+    json.dump(wrapped.__dict__["_data"], "wrapped.json")
+
     data = {
         "name": "John",
         "age": 30,
@@ -114,4 +117,6 @@ Wrapper class so that you can access `dict` and `list` as easily as in Javascrip
     # Accessing elements of the list using index notation
     print(wrapped_data.cars[0].color)  # Output: None
     print(wrapped_data['cars'][0]['color'])  # Output: None
+
+    json.dump(wrapped_data.__dict__["_data"], "data.json")
     ```

@@ -1,7 +1,9 @@
 import real_json
+import json
 
 
 def test_get_wrapped_json():
+
     data = {
         "a": 1,
         "b": 2,
@@ -64,6 +66,8 @@ def test_get_wrapped_json():
     assert bool(wrapped.c) == True
     assert bool(wrapped.f)
 
+    json.dump(wrapped.__dict__["_data"], "wrapped.json")
+
     data = {
         "name": "John",
         "age": 30,
@@ -106,6 +110,8 @@ def test_get_wrapped_json():
     # Accessing elements of the list using index notation
     print(wrapped_data.cars[0].color)  # Output: None
     print(wrapped_data['cars'][0]['color'])  # Output: None
+
+    json.dump(wrapped_data.__dict__["_data"], "data.json")
 
 
 test_get_wrapped_json()
