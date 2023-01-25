@@ -1,9 +1,7 @@
-# python_js_json
-Wrapper class so that you can access `dict` and `list` as easily as in Javascript
+import real_json
 
-## usage
 
-    ```python
+def test_get_wrapped_json():
     data = {
         "a": 1,
         "b": 2,
@@ -108,4 +106,6 @@ Wrapper class so that you can access `dict` and `list` as easily as in Javascrip
     # Accessing elements of the list using index notation
     print(wrapped_data.cars[0].color)  # Output: None
     print(wrapped_data['cars'][0]['color'])  # Output: None
-    ```
+
+
+test_get_wrapped_json()
