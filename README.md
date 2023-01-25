@@ -1,9 +1,15 @@
 # python_js_json
 Wrapper class so that you can access `dict` and `list` as easily as in Javascript
 
+## Installation
+
+    python3 -m pip install real_json
+
 ## usage
 
     ```python
+    import real_json
+
     data = {
         "a": 1,
         "b": 2,
