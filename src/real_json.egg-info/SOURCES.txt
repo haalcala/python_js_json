@@ -8,3 +8,4 @@ src/real_json.egg-info/SOURCES.txt
 src/real_json.egg-info/dependency_links.txt
 src/real_json.egg-info/requires.txt
 src/real_json.egg-info/top_level.txt
+test/test_GetWrappedJson.py

@@ -1,6 +1,6 @@
 from real_json.GetWrappedJson import GetWrappedJson
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 
 def ify(obj):
